@@ -9,60 +9,119 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/tantle27" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a></li>
-                <!-- <li><a href="Resume.pdf" target="_blank">Resume</a></li> -->
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/tantle27" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a></li>
+                    <li><a href="Trevor_Resume_new1.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
+    <main>
+        <section id="about" class="container">
+            <h1>About Me</h1>
+            <p>My name is Trevor Antle. I am studying Computer Engineering at Purdue. I am pursuing a career in Software Engineering.</p>
+        </section>
+        
+        <section id="projects" class="container">
+            <h1>Projects</h1>
+            <article class="project">
+                <header>
+                    <h2>Summer Project</h2>
+                </header>
+                <p>This project involved a variety of tasks that contributed to my growth and skill development over the summer. The project was an opportunity to explore new technologies and improve my coding practices.</p>
+            </article>
+            <article class="project">
+                <header>
+                    <h2>Catapult AI Hackathon</h2>
+                    <span>(March 2024)</span>
+                </header>
+                <p>During the Catapult AI Hackathon, I developed a robust Flask backend that integrated user responses efficiently. I utilized K-means clustering to optimize match results, enhancing the overall user experience.</p>
+                <footer>
+                    <a href="https://github.com/jiftesam/AIce" target="_blank">View Project</a>
+                </footer>
+            </article>
+            <article class="project">
+                <header>
+                    <h2>Disease Classification Neural Network</h2>
+                    <span>(Feb 2024 - present)</span>
+                </header>
+                <p>In this ongoing project, I am developing a machine learning model to predict heart disease using Python, pandas, and scikit-learn. The model aims to assist in early detection and prevention of heart disease by providing accurate predictions.</p>
+                <!-- <ul>
+                    <li>Developed a machine learning model to predict heart disease using Python, pandas, and scikit-learn</li>
+                    <li>Implemented Logistic Regression prediction models that resulted in a mean prediction accuracy of 80%</li>
+                </ul> -->
+                <footer>
+                    <a href="https://github.com/tantle27/Projects/tree/main/Heart%20Disease" target="_blank">View Project</a>
+                </footer>
+            </article>
+            <article class="project">
+                <header>
+                    <h2>Stock Market Machine Learning</h2>
+                    <span>(Nov 2023 - present)</span>
+                </header>
+                <p>This project involves developing a Python script that leverages machine learning to analyze stock market data comprehensively. The analysis includes visualizations and additional features to enhance the predictive capabilities of the models.</p>
+                <!-- <ul>
+                    <li>Developed a Python script leveraging machine learning to conduct comprehensive stock market data analysis</li>
+                    <li>Executed data analysis, generating distribution plots, box plots, and correlation heatmaps for visualizations</li>
+                    <li>Engineered additional features to augment the predictive capabilities of machine learning models</li>
+                </ul> -->
+                <footer>
+                    <a href="https://github.com/tantle27/Projects/tree/main/Stock%20Prediction" target="_blank">View Project</a>
+                </footer>
+            </article>
+            <!-- <article class="project">
+                <header>
+                    <h2>Enzyme Optimization Design, Purdue University</h2>
+                    <span>(Feb 2023 - May 2023)</span>
+                </header>
+                <p>In this academic project, I employed MATLAB for systematic software development using Michaelis-Menten models. The project aimed to optimize enzyme parameters, resulting in significant error reduction.</p>
+                <ul>
+                    <li>Employed MATLAB for systematic software development using Michaelis-Menten models, resulting in an 18% reduction in percent error of parameters across iterations</li>
+                    <li>Led a peer team to deliver a high-caliber design solution with less than 2% error</li>
+                </ul>
+                <footer>
+                    <a href="https://github.com/tantle27/enzyme-optimization" target="_blank">View Project</a>
+                </footer>
+            </article> -->
+            <!-- <article class="project">
+                <header>
+                    <h2>Streaming Platform Data Analytics</h2>
+                    <span>(Sept 2022 - Jan 2023)</span>
+                </header>
+                <p>This project focused on analyzing pricing and popularity trends in streaming platforms using Python. The insights gained from this analysis can help businesses make data-driven decisions regarding their content and pricing strategies.</p>
+                <ul>
+                    <li>Leveraged Python for a comprehensive data analysis of pricing and popularity trends in streaming platforms</li>
+                </ul>
+                <footer>
+                    <a href="https://github.com/tantle27/streaming-analytics" target="_blank">View Project</a>
+                </footer>
+            </article> -->
+        </section>
+        
+        <section id="contact" class="container">
+            <h1>Contact Me</h1>
+            <p>You can reach me at <a href="mailto:antletrevor5@gmail.com">antletrevor5@gmail.com</a>.</p>
+            <p>Phone: (502) 338-0819</p>
+        </section>
+    </main>
     
-    <section id="about">
-        <h1>About Me</h1>
-        <br>
-        <p>My name is Trevor Antle. I am from Louisville, Kentucky. I am studying Computer Engineering @ Purdue.
-            I am pursuing a career in Software Engineering.
-        </p>
-    </section>
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <p>You can reach me at <a href="mailto:antletrevor5@gmail.com">antletrevor5@gmail.com</a>.</p>
-    </section>
-    <section id="projects">
-        <h1>Projects</h1>
-        <br>
-        <div class="project">
-            <h2>Enzyme Analysis</h2>
-            <p>Employed MATLAB for systematic software development, resulting in an impressive 18% reduction in percent error of parameters across iterations. 
-                Devised an algorithm that harnessed Michaelis-Menten models in MATLAB to determine client parameters.
-                Led a peer team to deliver a high-caliber design solution with less than 2% error.</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Trevor Antle. All rights reserved.</p>
+            <p>
+                <a href="#about">About</a> | 
+                <a href="#projects">Projects</a> | 
+                <a href="#contact">Contact</a> | 
+                <a href="https://github.com/tantle27" target="_blank">GitHub</a> | 
+                <a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a>
+            </p>
         </div>
-        <div class="project">
-            <h2>Streaming Platform Data Analytics</h2>
-            <p>Leveraged Python for a comprehensive data analysis of pricing and popularity trends in streaming platforms.
-                Executed data management and advanced statistical analysis with precision as per the project's data management plan
-                </p>
-        </div>
-        <div class="project">
-            <h2>Time Series Forecasting for Air Pollution</h2>
-            <p>Pioneered the development of an LSTM neural network model for predicting daily PM10 concentrations in LA, California.
-                Analyzed Python-derived data to identify factors behind high LA pollution, proposing mitigation strategies.             
-                </p>
-        </div>
-        <div class="project">
-            <h2>SmartSpend.io</h2>
-            <p>Developed a full-stack project optimizing credit card savings by implementing efficient SQLite database management.
-                Utilized Python and Flask to drive backend functionality, orchestrate API calls, and execute exhaustive expenditure analysis.
-                Crafted an intuitive, user-friendly dashboard for analyzing spending patterns.                            
-                </p>
-        </div>
-    </section>
-    
-    
-    
+    </footer>
 </body>
 </html>
