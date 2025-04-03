@@ -1,122 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trevor Antle - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trevor Antle | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f5;
+      color: #111827;
+    }
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #93c5fd;
+      margin: 0 0.75rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      font-size: 1.75rem;
+      border-bottom: 2px solid #d1d5db;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .project {
+      background-color: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .project h3 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+    .project p {
+      margin-bottom: 0.5rem;
+    }
+    .project a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/tantle27" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a></li>
-                    <li><a href="Trevor_s_Resume-3.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about" class="container">
-            <h1>About Me</h1>
-            <p>My name is Trevor Antle. I am studying Computer Engineering at Purdue. I am seeking a Software Engineering Internship for Summer 2025.</p>
-        </section>
-        
-        <section id="projects" class="container">
-            <h1>Projects</h1>
-            
-            <article class="project">
-                <header>
-                    <h2>Catapult AI Hackathon</h2>
-                    <span>(March 2024)</span>
-                </header>
-                <p>During the Catapult AI Hackathon, I developed a robust Flask backend that integrated user responses efficiently. I utilized K-means clustering to optimize match results, enhancing the overall user experience.</p>
-                <footer>
-                    <a href="https://github.com/jiftesam/AIce" target="_blank">View Project</a>
-                </footer>
-            </article>
-            <article class="project">
-                <header>
-                    <h2>Disease Classification Neural Network</h2>
-                    <span>(Feb 2024 - present)</span>
-                </header>
-                <p>In this ongoing project, I am developing a machine learning model to predict heart disease using Python, pandas, and scikit-learn. The model aims to assist in early detection and prevention of heart disease by providing accurate predictions.</p>
-                <!-- <ul>
-                    <li>Developed a machine learning model to predict heart disease using Python, pandas, and scikit-learn</li>
-                    <li>Implemented Logistic Regression prediction models that resulted in a mean prediction accuracy of 80%</li>
-                </ul> -->
-                <footer>
-                    <a href="https://github.com/tantle27/Projects/tree/main/Heart%20Disease" target="_blank">View Project</a>
-                </footer>
-            </article>
-            <article class="project">
-                <header>
-                    <h2>Stock Market Machine Learning</h2>
-                    <span>(Nov 2023 - present)</span>
-                </header>
-                <p>This project involves developing a Python script that leverages machine learning to analyze stock market data comprehensively. The analysis includes visualizations and additional features to enhance the predictive capabilities of the models.</p>
-                <!-- <ul>
-                    <li>Developed a Python script leveraging machine learning to conduct comprehensive stock market data analysis</li>
-                    <li>Executed data analysis, generating distribution plots, box plots, and correlation heatmaps for visualizations</li>
-                    <li>Engineered additional features to augment the predictive capabilities of machine learning models</li>
-                </ul> -->
-                <footer>
-                    <a href="https://github.com/tantle27/Projects/tree/main/Stock%20Prediction" target="_blank">View Project</a>
-                </footer>
-            </article>
-            <!-- <article class="project">
-                <header>
-                    <h2>Enzyme Optimization Design, Purdue University</h2>
-                    <span>(Feb 2023 - May 2023)</span>
-                </header>
-                <p>In this academic project, I employed MATLAB for systematic software development using Michaelis-Menten models. The project aimed to optimize enzyme parameters, resulting in significant error reduction.</p>
-                <ul>
-                    <li>Employed MATLAB for systematic software development using Michaelis-Menten models, resulting in an 18% reduction in percent error of parameters across iterations</li>
-                    <li>Led a peer team to deliver a high-caliber design solution with less than 2% error</li>
-                </ul>
-                <footer>
-                    <a href="https://github.com/tantle27/enzyme-optimization" target="_blank">View Project</a>
-                </footer>
-            </article> -->
-            <!-- <article class="project">
-                <header>
-                    <h2>Streaming Platform Data Analytics</h2>
-                    <span>(Sept 2022 - Jan 2023)</span>
-                </header>
-                <p>This project focused on analyzing pricing and popularity trends in streaming platforms using Python. The insights gained from this analysis can help businesses make data-driven decisions regarding their content and pricing strategies.</p>
-                <ul>
-                    <li>Leveraged Python for a comprehensive data analysis of pricing and popularity trends in streaming platforms</li>
-                </ul>
-                <footer>
-                    <a href="https://github.com/tantle27/streaming-analytics" target="_blank">View Project</a>
-                </footer>
-            </article> -->
-        </section>
-        
-        <section id="contact" class="container">
-            <h1>Contact Me</h1>
-            <p>You can reach me at <a href="mailto:antletrevor5@gmail.com">antletrevor5@gmail.com</a>.</p>
-            <p>Phone: (502) 338-0819</p>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Trevor Antle. All rights reserved.</p>
-            <p>
-                <a href="#about">About</a> | 
-                <a href="#projects">Projects</a> | 
-                <a href="#contact">Contact</a> | 
-                <a href="https://github.com/tantle27" target="_blank">GitHub</a> | 
-                <a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
-    </footer>
+  <header>
+    <h1>Trevor Antle</h1>
+    <p>Software Engineer | Machine Learning</p>
+    <nav>
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="mailto:antletrevor5@gmail.com">Contact</a>
+      <a href="https://www.linkedin.com/in/trevor-antle/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Approximate Nearest Neighbor Search with Orthogonal Residuals</h3>
+        <p>Built a PyTorch pipeline for orthogonal vector encoding, integrated with FAISS for scalable ANN retrieval. Achieved <strong>Recall@10 = 0.9581</strong> and sub-10s query time through optimization and ablation studies on PCA, quantization, and clustering.</p>
+        <a href="https://github.com/tantle27/ECE-570-Research-Paper" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>STM32 Pong Matrix</h3>
+        <p>Created a real-time pong game using bare-metal C on STM32. Used GPIO and ultrasonic sensors for paddle tracking, and integrated DMA + SPI to update an OLED with live scoring and countdown logic.</p>
+        <a href="https://github.com/alexayl/stm32pong" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Embedded Systems @ Purdue (Vice President & Co-Founder)</h3>
+        <p>Lead technical workshops on microcontroller programming and hardware debugging. Developed and deployed the official club website to showcase projects and resources.</p>
+        <a href="https://embedded-purdue.github.io" target="_blank">View Club Website</a>
+      </div>
+
+      <!-- <div class="project">
+        <h3>Disease Classification Neural Network</h3>
+        <p>Constructed a machine learning model using pandas and scikit-learn to predict heart disease with 80% accuracy. Employed logistic regression and other algorithms to optimize performance and generalization.</p>
+        <a href="https://github.com/tantle27/disease-classifier" target="_blank">View on GitHub</a>
+      </div> -->
+
+      <div class="project">
+        <h3>Catapult AI Hackathon — Intelligent Matching System</h3>
+        <p>Engineered a Flask backend integrating user inputs with K-means clustering to optimize match accuracy. Developed OpenAI API integration to generate context-aware conversation starters with a 90% match rating.</p>
+        <a href="https://github.com/jiftesam/AIce" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+
+      <div class="project">
+        <h3>Software Engineering Intern — Humana</h3>
+        <p>Summer 2023, Summer 2024 - Present<br>
+        Worked on automation tools for compliance validation, PGP encryption, batch processing, and AI-enhanced workflows. Developed Django applications and integrated OpenAI-powered chatbot solutions for healthcare data access. Built out and tested compliance application for production. Developed a relational database to relate necessary information for increased efficiency. Developed a full-stack encryption platform. Researched AI use cases for corporate technologies. Automated processes to increase efficiency and productivity for compliance validation software. Software Developer for CRM AI initiative.
+        </p>
+    </div>
+
+      <div class="project">
+        <h3>Undergraduate Teaching Assistant — Purdue University</h3>
+        <p>Aug 2024 – Present<br>Supported students in Python for Data Science by helping debug assignments, explain key concepts, and guide best practices for writing clean and efficient code.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Trevor Antle. All rights reserved.
+  </footer>
 </body>
 </html>
